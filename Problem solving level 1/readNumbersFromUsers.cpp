@@ -1,32 +1,33 @@
 #include <iostream>
-
-#include <cmath>
-
+#include <string>
 using namespace std;
 
-
-float readNumbersFromUsers() {
-    float diameter;
-    cout << "Please Enter a diameter ...\n";
-    cin >> diameter;
-    return diameter;
-
-
-}
-float areaOfCircleByDiameter(float diameter) {
-    const float PI = 3.141592653589793238;
-    float area = PI * pow(diameter, 2);
-    return area;
-}
-void printArea(float area) {
-    cout << "The area is " << area << endl;
+void readNumbersFromUsers(int& num1, int& num2, int& num3) {
+    cout << "Please Enter first Number to sum them...\n";
+    cin >> num1;
+    cout << "Please Enter Second Number to sum them...\n";
+    cin >> num2;
+    cout << "Please Enter Third Number to sum them...\n";
+    cin >> num3;
 }
 
+int sumOfNumbers(int num1, int num2, int num3) {
+    int result = num1 + num2 + num3;
+    return result;
+}
+
+void printSumOfNumbers(int numbers) {
+
+    cout << "Sum Of number is = " << numbers;
+}
 
 int main()
 {
+    int num1, num2, num3;
 
-    printArea(areaOfCircleByDiameter(readNumbersFromUsers()));
+    readNumbersFromUsers(num1, num2, num3);
+
+    printSumOfNumbers(sumOfNumbers(num1, num2, num3));
 
 
 
