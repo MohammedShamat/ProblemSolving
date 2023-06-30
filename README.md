@@ -1,2 +1,2 @@
-# ProblemSolving
-Algorithms And Problem Solving Levels by Programming Advices
+# ProblemsSolving
+Algorithms And Problems Solving Levels by Programming Advices
