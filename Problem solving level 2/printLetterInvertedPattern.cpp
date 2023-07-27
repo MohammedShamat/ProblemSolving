@@ -19,15 +19,15 @@ int readNumberFromUser(string message) {
 
 void printLetterPattern(int number) {
 
-	cout << "letter pattern as follows \n\n";
-	short letter = 65;
-	for (short temp = 1; temp <= number; temp++) {
-		for (short counter = 1; counter <= temp; counter++) {
+	cout << "inverted letter pattern as follows \n\n";
 
-			cout << char(letter);
+	for (short temp = number; temp > 0; temp--) {
+		for (short counter = number; counter > 0; counter--) {
+
+			cout << char(64 + number);
 
 		}
-		letter++;
+		number--;
 		cout << endl;
 
 	}
@@ -42,21 +42,18 @@ int main() {
 }/*
 
 Please Enter a number
-sdd
-Invalid Number, Enter a valid one
 -99
 Invalid Number, Enter a valid one
-10
-letter pattern as follows
+cfdfd
+Invalid Number, Enter a valid one
+5
+inverted letter pattern as follows
 
-A
-BB
-CCC
-DDDD
 EEEEE
-FFFFFF
-GGGGGGG
-HHHHHHHH
-IIIIIIIII
-JJJJJJJJJJ
+DDDD
+CCC
+BB
+A
+
+
  */
