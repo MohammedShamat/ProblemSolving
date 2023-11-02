@@ -21,20 +21,10 @@ void PrintMatrix(short arr[3][3], short rows, short cols) {
 		cout << endl;
 	}
 }
-void PrintTransposedMatrix(short arr[3][3], short rows, short cols) {
-	cout << "The following is the transposed matrix is :\n";
-	for (short indexFirst = 0; indexFirst < rows; indexFirst++) {
-		for (short indexSec = 0; indexSec < cols; indexSec++) {
-			cout << setw(3) << arr[indexSec][indexFirst] << "\t";
-		}
-		cout << endl;
-	}
-}
 int main() {
 	short arr[3][3];
 	FillMatrix(arr, 3, 3);
 	PrintMatrix(arr, 3, 3);
-	PrintTransposedMatrix(arr, 3, 3);
 }
 /*
 output :
@@ -42,9 +32,5 @@ The following is a 3 * 3 ordered matrix is :
   1       2       3
   4       5       6
   7       8       9
-The following is the transposed matrix is :
-  1       4       7
-  2       5       8
-  3       6       9
 
 */
